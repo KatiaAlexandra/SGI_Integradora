@@ -1,0 +1,132 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F7F7F7;
+}
+
+nav {
+    background-color: #083465;
+    color: #FFF;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+nav .nav-item {
+    display: inline-block;
+    position: relative;
+    margin: 0 20px;
+    cursor: pointer;
+}
+nav .nav-item img {
+    display: block;
+    margin: 0 auto;
+    height: 30px;
+    width: 30px;
+}
+nav a {
+    color: #FFF;
+    margin: 0 15px;
+    font-weight: 400;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.card {
+    background-color: #FFF;
+    border: 1px solid #DDD;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 15px;
+}
+
+nav .nav-item:hover {
+    background-color: #93b6f1 !important;
+}
+
+nav .nav-item.active {
+    background-color: #93b6f1 !important;
+}
+.container {
+    padding: 10px;
+}
+
+.align-buttons {
+    display: flex;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    border: 1px solid #DDD;
+    padding: 10px;
+    text-align: left;
+}
+
+.acciones img{
+    width: 20px;
+    height: 20px;
+}
+
+.acciones{
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 98%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+.dataTables_filter input {
+    width: 300px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.table th {
+    background-color: #083465;
+    color: #FFF;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+:root{
+    --bs-body-font-family: 'Poppins', sans-serif !important;
+}
+
+.bg-custom {
+    background-color: #029575 !important;
+}
+
+.bg-custom1 {
+    background-color: #083465 !important;
+}
+
+.botonesAcciones {
+    background-color: transparent !important;
+    border: none !important;
+    padding: 0 !important;
+}
