@@ -7,7 +7,7 @@ public class DBConnection {
     public Connection getConnection(){
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
-            return DriverManager.getConnection("jdbc:mysql://localhost:3306/inventory", "root", "ElviaSan1");
+            return DriverManager.getConnection("jdbc:mysql://localhost:3306/inventory", "root", "root");
         }catch(Exception e){
             e.printStackTrace();
             return null;
