@@ -1,15 +1,15 @@
 # SGI Integradora
 
 ## Tabla de Contenidos
-- [Descripción](https://github.com/KatiaAlexandra/SGI_Integradora/main/README.md#descripción)
-- [Problema Identificado](https://github.com/KatiaAlexandra/SGI_Integradora/main/README.md#problema-identificado)
-- [Solución](https://github.com/KatiaAlexandra/SGI_Integradora/main/README.md#solución)
-- [Arquitectura](https://github.com/KatiaAlexandra/SGI_Integradora/main/README.md#arquitectura)
-- [Requerimientos](https://github.com/KatiaAlexandra/SGI_Integradora/main/README.md#requerimientos)
-- [Instalación](https://github.com/KatiaAlexandra/SGI_Integradora/main/README.md#instalación)
-- [Configuración](https://github.com/KatiaAlexandra/SGI_Integradora/main/README.md#configuración)
-- [Uso](https://github.com/KatiaAlexandra/SGI_Integradora/main/README.md#uso)
-- [Contribución](https://github.com/KatiaAlexandra/SGI_Integradora/main/README.md#contribución)
+- [Descripción](https://github.com/KatiaAlexandra/SGI_Integradora/blob/main/README.md#descripci%C3%B3n)
+- [Problema Identificado](https://github.com/KatiaAlexandra/SGI_Integradora/blob/main/README.md#problema-identificado)
+- [Solución](https://github.com/KatiaAlexandra/SGI_Integradora/blob/main/README.md#soluci%C3%B3n)
+- [Arquitectura](https://github.com/KatiaAlexandra/SGI_Integradora/blob/main/README.md#arquitectura)
+- [Requerimientos](https://github.com/KatiaAlexandra/SGI_Integradora/blob/main/README.md#requerimientos)
+- [Instalación](https://github.com/KatiaAlexandra/SGI_Integradora/blob/main/README.md#instalaci%C3%B3n)
+- [Configuración](https://github.com/KatiaAlexandra/SGI_Integradora/blob/main/README.md#configuraci%C3%B3n)
+- [Uso](https://github.com/KatiaAlexandra/SGI_Integradora/blob/main/README.md#uso)
+- [Contribución](https://github.com/KatiaAlexandra/SGI_Integradora/blob/main/README.md#contribuci%C3%B3n)
   
 ## Descripción
 SGI Integradora es un sistema de gestión integral diseñado para gestionar las operaciones diarias de la División Académica de Tecnologías de la Información y Diseño (DATID) en la Universidad Tecnológica Emiliano Zapata (UTEZ). Este proyecto tiene como objetivo mejorar la eficiencia y la productividad mediante la automatización de procesos clave.
@@ -44,15 +44,9 @@ La arquitectura del sistema SGI Integradora está compuesta por los siguientes c
 
 ## Instalación
 ### ¿Cómo instalar el ambiente de desarrollo?
-1. Clonar el repositorio:
-
-   git clone [URL del repositorio]
-
-2. Navegar al directorio del proyecto:
-   cd SGI_Integradora
-   
-3. Instalar dependencias:
-   mvn install
+1. Clonar el repositorio: git clone [URL del repositorio]
+2. Navegar al directorio del proyecto: cd SGI_Integradora 
+3. Instalar dependencias: mvn install
 
 ## Instalación
 1.Configurar la base de datos y asegurarse de que el servidor MySQL esté en funcionamiento.
@@ -120,12 +114,7 @@ Este manual proporciona una guía completa para que tanto los usuarios finales c
 
 ## Contribución
 ### Guía de Contribución para Usuarios
-1. Clonar el repositorio:
-   git clone [URL del repositorio]
-2.Crear un nuevo branch:
-   git checkout -b [nombre-del-branch]
-4. Realizar cambios y commitear:
-   git add .
-   git commit -m "[Descripción de los cambios]"
-5. Esperar a que se haga el merge:
-   Seguir las instrucciones y pautas del proyecto para el proceso de revisión de código.
+1. Clonar el repositorio: git clone [URL del repositorio]
+2.Crear un nuevo branch: git checkout -b [nombre-del-branch]
+4. Realizar cambios y commitear: git add .  Y  git commit -m "[Descripción de los cambios]"
+5. Esperar a que se haga el merge: Seguir las instrucciones y pautas del proyecto para el proceso de revisión de código.
