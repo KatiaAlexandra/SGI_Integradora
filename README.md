@@ -116,12 +116,6 @@ El manual de usuario administrador incluye información sobre cómo gestionar y 
 2. Revisa los logs y registros del sistema para identificar posibles problemas o inconsistencias.
 3. Los administradores pueden exportar los logs para análisis adicional.
 
-#### Auditoría de Inventarios
-1. Accede a la sección de "Auditoría" en el menú principal.
-2. Revisa el historial de movimientos de artículos, incluyendo registros de altas y bajas.
-3. Los administradores pueden filtrar y buscar en el historial según fecha, usuario o tipo de acción.
-4. La opción de exportar el historial a Excel o PDF está disponible para fines de auditoría.
-
 Este manual proporciona una guía completa para que tanto los usuarios finales como los administradores puedan utilizar y gestionar el sistema SGI Integradora de manera efectiva.
 
 ## Contribución
