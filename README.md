@@ -1,5 +1,16 @@
 # SGI Integradora
 
+## Tabla de Contenidos
+- [Descripción](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#descripción)
+- [Problema Identificado](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#problema-identificado)
+- [Solución](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#solución)
+- [Arquitectura](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#arquitectura)
+- [Requerimientos](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#requerimientos)
+- [Instalación](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#instalación)
+- [Configuración](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#configuración)
+- [Uso](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#uso)
+- [Contribución](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#contribución)
+  
 ## Descripción
 SGI Integradora es un sistema de gestión integral diseñado para gestionar las operaciones diarias de la División Académica de Tecnologías de la Información y Diseño (DATID) en la Universidad Tecnológica Emiliano Zapata (UTEZ). Este proyecto tiene como objetivo mejorar la eficiencia y la productividad mediante la automatización de procesos clave.
 
@@ -16,17 +27,6 @@ La arquitectura del sistema SGI Integradora está compuesta por los siguientes c
 - **Base de Datos**: MySQL para almacenar la información.
 - **Servidor de Aplicaciones**: Apache Tomcat para servir las aplicaciones web.
 - **APIs**: APIs RESTful para la comunicación entre el frontend y el backend.
-
-## Tabla de Contenidos
-- [Descripción](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#descripción)
-- [Problema Identificado](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#problema-identificado)
-- [Solución](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#solución)
-- [Arquitectura](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#arquitectura)
-- [Requerimientos](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#requerimientos)
-- [Instalación](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#instalación)
-- [Configuración](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#configuración)
-- [Uso](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#uso)
-- [Contribución](https://github.com/KatiaAlexandra/SGI_Integradora/edit/main/README.md#contribución)
 
 ## Requerimientos
 ### Servidores de Aplicación y Web
