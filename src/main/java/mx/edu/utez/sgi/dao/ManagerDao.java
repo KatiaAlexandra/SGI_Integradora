@@ -21,6 +21,7 @@ public class ManagerDao {
             "INSERT INTO Article_Manager (Manager_Status, First_Name, Second_Name, First_Lastname, Second_Lastname, Employee_Num, Custody_date)VALUES(?,?,?,?,?,?,?);",
             "UPDATE Article_Manager SET Manager_Status =?, First_Name=?, Second_Name=?, First_Lastname=?, Second_Lastname=?, Employee_Num=?, Custody_date=? WHERE Manager_ID =?;",
             "DELETE FROM Article_Manager WHERE Manager_ID=?;",
+            "UPDATE Article_Manager SET Manager_Status =? WHERE Manager_ID=?;"
     };
 
     public List<Manager> findAllManagers(){
@@ -32,7 +33,7 @@ public class ManagerDao {
             while(rs.next()) {
                 Manager manager = new Manager(
                         rs.getLong("Manager_ID"),
-                        rs.getString("Manager_Status"),
+                        rs.getBoolean("Manager_Status"),
                         rs.getString("First_Name"),
                         rs.getString("Second_Name"),
                         rs.getString("First_Lastname"),
@@ -61,7 +62,7 @@ public class ManagerDao {
             if(rs.next()) {
                 found = new Manager(
                         rs.getLong("Manager_ID"),
-                        rs.getString("Manager_Status"),
+                        rs.getBoolean("Manager_Status"),
                         rs.getString("First_Name"),
                         rs.getString("Second_Name"),
                         rs.getString("First_Lastname"),
@@ -83,7 +84,7 @@ public class ManagerDao {
         try {
             con = DB_CONNECTION.getConnection();
             pstm=con.prepareStatement(QUERIES[2]);
-            pstm.setString(1, manager.getManager_Status());
+            pstm.setBoolean(1, manager.getManager_Status());
             pstm.setString(2, manager.getFirst_Name());
             pstm.setString(3, manager.getSecond_Name());
             pstm.setString(4, manager.getFirst_Lastname());
@@ -105,7 +106,7 @@ public class ManagerDao {
             try {
                 con = DB_CONNECTION.getConnection();
                 pstm=con.prepareStatement(QUERIES[3]);
-                pstm.setString(1, manager.getManager_Status());
+                pstm.setBoolean(1, manager.getManager_Status());
                 pstm.setString(2, manager.getFirst_Name());
                 pstm.setString(3, manager.getSecond_Name());
                 pstm.setString(4, manager.getFirst_Lastname());
@@ -131,6 +132,26 @@ public class ManagerDao {
                 con = DB_CONNECTION.getConnection();
                 pstm=con.prepareStatement(QUERIES[4]);
                 pstm.setLong(1, Manager_ID);
+                return pstm.executeUpdate() == 1;
+            } catch (SQLException e){
+                e.printStackTrace();
+                return false;
+            } finally {
+                closeConnection();
+            }
+        } else {
+            return false;
+        }
+    }
+
+    public boolean changeManagerStatus(long Manager_ID){
+        Manager found = findManagerById(Manager_ID);
+        if(found != null){
+            try {
+                con = DB_CONNECTION.getConnection();
+                pstm=con.prepareStatement(QUERIES[5]);
+                pstm.setBoolean(1, !found.getManager_Status());
+                pstm.setLong(2, Manager_ID);
                 return pstm.executeUpdate() == 1;
             } catch (SQLException e){
                 e.printStackTrace();

@@ -149,13 +149,16 @@ public class ArticleDao {
 
     public void closeConnection(){
         try{
+            if(con != null){
+                con.close();
+            }
+            if(pstm!= null){
+                pstm.close();
+            }
             if(rs!=null){
                 rs.close();
             }
-            if (con!=null){
-                con.close();
-            }
-        }catch(SQLException e){
+        } catch(SQLException e){
             e.printStackTrace();
         }
     }

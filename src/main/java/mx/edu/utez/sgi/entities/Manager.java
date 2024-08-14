@@ -2,7 +2,7 @@ package mx.edu.utez.sgi.entities;
 
 public class Manager {
     private Long Manager_ID;
-    private String Manager_Status;
+    private boolean Manager_Status;
     private String First_Name;
     private String Second_Name;
     private String First_Lastname;
@@ -13,7 +13,7 @@ public class Manager {
     public Manager(){
     }
 
-    public Manager(Long manager_ID, String manager_Status, String first_Name, String second_Name, String first_Lastname, String second_Lastname, Long employee_Num, String custody_date) {
+    public Manager(Long manager_ID, boolean manager_Status, String first_Name, String second_Name, String first_Lastname, String second_Lastname, Long employee_Num, String custody_date) {
         this.Manager_ID = manager_ID;
         this.Manager_Status = manager_Status;
         this.First_Name = first_Name;
@@ -24,7 +24,7 @@ public class Manager {
         this.Custody_date = custody_date;
     }
 
-    public Manager(String manager_Status, String first_Name, String second_Name, String first_Lastname, String second_Lastname, Long employee_Num, String custody_date) {
+    public Manager(boolean manager_Status, String first_Name, String second_Name, String first_Lastname, String second_Lastname, Long employee_Num, String custody_date) {
         this.Manager_Status = manager_Status;
         this.First_Name = first_Name;
         this.Second_Name = second_Name;
@@ -32,6 +32,16 @@ public class Manager {
         this.Second_Lastname = second_Lastname;
         this.Employee_Num = employee_Num;
         this.Custody_date = custody_date;
+    }
+
+    public Manager(Long manager_ID, String first_Name, String second_Name, String first_Lastname, String second_Lastname, Long employee_Num, String custody_date) {
+        Manager_ID = manager_ID;
+        First_Name = first_Name;
+        Second_Name = second_Name;
+        First_Lastname = first_Lastname;
+        Second_Lastname = second_Lastname;
+        Employee_Num = employee_Num;
+        Custody_date = custody_date;
     }
 
     public String getCustody_date() {
@@ -82,11 +92,11 @@ public class Manager {
         First_Name = first_Name;
     }
 
-    public String getManager_Status() {
+    public boolean getManager_Status() {
         return Manager_Status;
     }
 
-    public void setManager_Status(String manager_Status) {
+    public void setManager_Status(boolean manager_Status) {
         Manager_Status = manager_Status;
     }
 

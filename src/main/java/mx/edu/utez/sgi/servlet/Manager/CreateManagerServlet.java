@@ -21,8 +21,6 @@ public class CreateManagerServlet extends HttpServlet {
         response.setContentType("text/html; charset UTF-8");
 
         ManagerDao managerDao = new ManagerDao();
-        boolean activo = Boolean.parseBoolean(request.getParameter("activo"));
-        String status = activo ? "Activo" : "Inactivo";
 
         String nombre1A = request.getParameter("nombre1A");
         String nombre2A = request.getParameter("nombre2A");
@@ -31,7 +29,7 @@ public class CreateManagerServlet extends HttpServlet {
         long numEmpleado = Long.parseLong(request.getParameter("numEmpleado"));
         String fechaResguardo = request.getParameter("fechaResguardo");
 
-        Manager manager = new Manager(status, nombre1A, nombre2A, apellido1A, apellido2A, numEmpleado, fechaResguardo);
+        Manager manager = new Manager(true, nombre1A, nombre2A, apellido1A, apellido2A, numEmpleado, fechaResguardo);
         request.setAttribute("success", managerDao.createManager(manager));
 
         doGet(request, response);

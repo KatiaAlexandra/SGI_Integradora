@@ -25,8 +25,6 @@ public class UpdateManager extends HttpServlet {
         ManagerDao managerDao = new ManagerDao();
         long id = Long.parseLong(request.getParameter("id"));
 
-        String status = request.getParameter("status");
-
         String nombre1A = request.getParameter("nombre1A");
         String nombre2A = request.getParameter("nombre2A");
         String apellido1A = request.getParameter("apellido1A");
@@ -34,7 +32,7 @@ public class UpdateManager extends HttpServlet {
         long numEmpleado = Long.parseLong(request.getParameter("numEmpleado"));
         String fechaResguardo = request.getParameter("fechaResguardo");
 
-        Manager manager = new Manager(id, status, nombre1A, nombre2A, apellido1A, apellido2A, numEmpleado, fechaResguardo);
+        Manager manager = new Manager(id, nombre1A, nombre2A, apellido1A, apellido2A, numEmpleado, fechaResguardo);
         request.setAttribute("success", managerDao.updateManager(manager));
 
         doGet(request, response);
